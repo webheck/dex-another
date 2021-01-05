@@ -1,0 +1,328 @@
+html{
+overflow-x: hidden;
+
+}
+*{
+  overflow: hidden
+  margin: 0;
+  padding: 0;
+      /*box-sizing: border-box;*/
+      font-family: 'Montserrat', sans-serif;
+}
+#banner{
+  background: linear-gradient(rgba(0.4, 0, 0, 0),rgba(0, 0, 0, 0.2)) ,url(wallpaper_1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+
+}
+.navbar {
+  background: #18191b!important;
+  border-bottom: none;
+  padding: 10px 0;
+  transition-duration: 0.6s;
+}
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav>li>a {
+  color: #183532;
+
+}
+.nav-elements{
+  font-family: 'Montserrat', sans-serif;
+
+margin: 0 10px !important;
+padding: 8px 10px!important;
+color: #fff!important;
+text-transform: uppercase;
+letter-spacing: 3px;
+font-size: 10px;
+
+
+
+}
+.nav-elements:hover{
+  color: #b28feb!important;
+}
+.nav-list{
+ 
+
+margin-right: 0px;
+margin-top: 12px;
+}
+.dex-logo{
+  width: 180px;
+  padding-top: 5px;
+}
+.navbar-brand{
+/* margin-bottom: 10px;*/
+max-width: 190px;
+margin-bottom: 0px;
+}
+/* jQuery Styles
+===================================*/
+.navbar-scroll {
+  background: #ffffff;
+  padding: 0;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+  transition-duration: 0.6s;
+}
+.nav-dropdown-scroll {
+  background: #e7eaea;
+  box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.4);
+}
+#any{
+  /*  background-image:linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)),url(color_bg.png);*/
+ /* background-position: center;
+  background-size: cover;
+  height: 100vh;
+  background-image: */
+}
+
+.title-heading{
+ text-align: center;
+ text-transform: uppercase;
+}
+
+
+
+///blob
+
+.bg-wrap {
+ 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.gooey-rec {
+  background: linear-gradient(90deg, #b28feb 0%, #b28feb 100%);
+  height: 400px;
+  width: 400px;
+  border-radius: 30% 70% 20% 40%;
+    animation: 
+    transform 20s ease-in-out infinite both alternate,
+    movement_one 40s ease-in-out infinite both;
+  opacity: .2;
+  position: absolute;
+  left: 70%;
+  top: 50%;
+  margin-top: 800px;
+z-index: 0;
+}
+.gooey-rec.one {
+  background: linear-gradient(90deg, #b28feb 0%, #b28feb 100%);
+  height: 700px;
+  width: 700px;
+  left: -500px;
+  top: -250px;
+  transform: rotate(-180deg);
+  animation: transform 30s ease-in-out infinite both alternate, movement_two 60s ease-in-out infinite both;
+z-index: 0
+}
+.gooey-rec.two {
+  background: linear-gradient(90deg, #b28feb 0%, #b28feb 100%);
+  height: 500px;
+  width: 600px;
+  left: 30%;
+  top: 0%;
+  transform: rotate(-180deg);
+  animation: transform 30s ease-in-out infinite both alternate, movement_two 60s ease-in-out infinite both;
+z-index: 0;
+}
+
+
+@keyframes transform
+{
+    0%,
+  100% { border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%; } 
+   20% { border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%; } 
+   40% { border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%; } 
+   60% { border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%; } 
+   80% { border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%; } 
+}
+
+
+@keyframes movement_one
+{
+    0%,
+  100% { transform: none; }
+   50% { transform: translate(50%, 20%) rotateY(10deg) scale(1.2); }
+}
+
+@keyframes movement_two
+{
+    0%,
+  100% { transform: none; }
+   50% { transform: translate(50%, 20%) rotate(-200deg) scale(1.2);}
+}
+
+.title-heading{
+
+  margin-top: 40px;
+}
+.title-heading h2{
+/*  font-size: 2.2em;*/
+  font-weight: 500;
+  color: #333333;
+  font-size:32px;
+}
+
+.title-heading h2:after {
+    display: block;
+    height: 2px;
+    background-color: #b28feb;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+    transform: scaleX(1);
+    transform-origin: bottom right;
+    transition: transform 0.4s ease-out;
+}
+.title-heading h2:hover::after{
+ 
+  transform: scaleX(0);
+  transform-origin: bottom left;
+}
+.title-desc {
+  margin-top: 80px;
+  padding: 0 50px;
+}
+.title-desc p{
+  font-size: 14px;
+}
+/*prefab room css*/
+.prefab-column{
+  padding-top: 30px;
+}
+.prefab-col-element h3 {
+  font-size:30px;
+  text-transform:uppercase;
+  font-weight: 500;
+  color: #333333;
+  text-align: center;
+
+}
+.prefab-images-1{
+  margin-top: 30px;
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  overflow: hidden;
+  animation: morph 3s linear infinite;
+}
+.prefab-images-2{
+  margin-top: 30px;
+  border-radius: 40% 50% 70% 30% / 40% 50% 60% 50%;
+  overflow: hidden;
+  animation: morph 3s linear infinite;
+}
+.prefab-images-3{
+  margin-top: 30px;
+  border-radius: 40% 60% 20% 30% / 40% 50% 60% 50%;
+  overflow: hidden;
+  animation: morph 3s linear infinite;
+}
+/*
+.prefab-images img {
+  width: 100%;
+}
+*/
+/*animations*/
+/*
+@keyframes morph{
+  0%, 100% {
+  border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+  }
+  34% {
+    border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+  }
+  67% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+  }
+}*/
+/*  it is for making animation bounceout only once*/
+.animate__animated{
+  animation-iteration-count: 1!important;
+}
+
+
+/*testinomial_section*/
+/*
+
+
+
+
+.testi_section{
+
+  position: relative;
+  background-color: #fff;
+  display: block;
+  border-radius:100px;
+
+
+
+}
+.testi_imag{
+ position: relative;
+  float: left;
+  display: block;
+  margin-left: 40px;
+  shape-outside: circle();
+  margin-right: 40px;
+  margin-top: 70px;
+ 
+background-color: #000;
+border-radius: 50%;
+
+}
+.testi_imag img {
+width: 200px;
+  border-radius: 50%;
+  image-resolution: from-image;
+  padding: 30px;
+}
+.testi_text{
+  background-color: #b28feb;
+padding: 50px 100px;
+
+}*/
+
+
+.testi_text{
+  background-color: #b28feb;
+padding: 20px 50px!important;
+ border-radius: 40% 50% 80% 20%;
+
+}
+.testi_imag{
+ position: relative;
+  max-width: 200px;
+
+}
+.testi_imag img{
+width: 100%;
+ height : auto;
+   border-radius: 70% 30% 50% 50% ;
+}
+.testimonia{
+padding-top: 80px;
+ height: 100vh;
+
+
+
+}
+
+.testi_sectio{
+margin-top: 120px!important;
+}
+
+.quote:before{
+  content: "\201C";
+    font-size:60px;
+    display: inline-block;
+
+}
