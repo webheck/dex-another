@@ -210,19 +210,20 @@ z-index: 0;
 }
 .prefab-images-1{
   margin-top: 30px;
-  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+
   overflow: hidden;
-  animation: morph 3s linear infinite;
+  position: relative;
+
 }
 .prefab-images-2{
   margin-top: 30px;
-  border-radius: 40% 50% 70% 30% / 40% 50% 60% 50%;
-  overflow: hidden;
-  animation: morph 3s linear infinite;
+border-radius: 30%;
+ 
+
 }
 .prefab-images-3{
   margin-top: 30px;
-  border-radius: 40% 60% 20% 30% / 40% 50% 60% 50%;
+border-radius: 30%;
   overflow: hidden;
   animation: morph 3s linear infinite;
 }
@@ -325,4 +326,60 @@ margin-top: 120px!important;
     font-size:60px;
     display: inline-block;
 
+}
+
+
+.testing{
+
+  width: 500px;
+  height: 500px;
+background: linear-gradient(rgba(0.4, 0, 0, 0),rgba(0, 0, 0, 0.2)) ,url(png_img.png);
+background-position: center;
+}
+
+
+.overlay_{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0),#fff);
+  opacity: 0;
+  transition: 0.8s;
+
+}
+.prefab-images-1:hover .overlay_{
+  opacity: 0.7;
+}
+.prefab-images-1:hover .prefab-desc{
+bottom: 20%;
+opacity: 1;}
+.prefab-desc{
+  position: absolute;
+  bottom: 0%;
+  left: 2%;
+  max-width: 330px;
+  opacity: 0;
+  transition: 0.8s;
+
+}
+
+.prefab-desc h3:after{
+   display: block;
+    height: 2px;
+    background-color: #4b0382;
+    content: " ";
+    width: 90px;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+.prefab-desc h3{
+text-align: center;
+color: #4b0382;
+font-weight: 500;
+}
+.prefab-desc p {
+  text-align: center;
+  color: #4b0382;
+  font-weight: 500
 }
